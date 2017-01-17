@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PokemonGBAFrameWork; 
+using PokemonGBAFrameWork;
 using Microsoft.Win32;
+using Gabriel.Cat.Extension;
 
 namespace HuellaPokemon
 {
@@ -24,6 +25,8 @@ namespace HuellaPokemon
     {
         public MainWindow()
         {
+            byte b= 0x33;
+            bool[] bits = b.ToBits();
             OpenFileDialog opnFile;
             RomData romData;
             InitializeComponent();
